@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 
 const ProductDetail = () => {
     const router = useRouter();
-    console.log(router.query)
+    // console.log(router.query)
     const productId = router.query.productid;
     // console.log(productId, "productId")
     return (
