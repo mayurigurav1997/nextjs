@@ -18,6 +18,9 @@ function Home() {
       <Link href='/product'>
         Products
       </Link>
+      <Link href='/users'>
+        Users
+      </Link>
       <button onClick={handleClick}>Place Order</button>
       {/* <UserList /> */}
 
