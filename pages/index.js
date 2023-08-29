@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import UserList from './users'
 
 function Home() {
   const router = useRouter()
@@ -18,6 +19,8 @@ function Home() {
         Products
       </Link>
       <button onClick={handleClick}>Place Order</button>
+      {/* <UserList /> */}
+
     </>
   )
 }
