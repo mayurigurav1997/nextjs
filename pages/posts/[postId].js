@@ -36,7 +36,8 @@ export async function getStaticProps(context) {
     return {
         props: {
             post: data
-        }
+        },
+        // revalidate: 40
     }
 }
 
@@ -56,6 +57,7 @@ export async function getStaticPaths() {
             { params: { postId: '3' } }
         ],
         // fallback: false
+        // fallback: blocking
         fallback: true
     }
 }
