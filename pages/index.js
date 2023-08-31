@@ -15,12 +15,15 @@ function Home() {
       <Link href='/blog'>
         Blog
       </Link>
+      <br />
       <Link href='/product'>
-        Products
+        Product
       </Link>
+      <br />
       <Link href='/users'>
         Users
       </Link>
+      <br />
       <button onClick={handleClick}>Place Order</button>
       {/* <UserList /> */}
 

@@ -3,6 +3,7 @@ import React from 'react'
 
 const Doc = () => {
     const router = useRouter()
+    // catch all routes
     const { params = [] } = router.query
     console.log(params)
     if (params.length === 2) {
