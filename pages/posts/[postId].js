@@ -2,7 +2,6 @@ import { useRouter } from 'next/router'
 
 function Post({ post }) {
     const router = useRouter()
-
     if (router.isFallback) {
         return <div>Loading...</div>
     }
@@ -16,7 +15,6 @@ function Post({ post }) {
         </>
     )
 }
-
 export default Post
 
 export async function getStaticProps(context) {
