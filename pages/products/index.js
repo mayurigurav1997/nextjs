@@ -1,27 +1,3 @@
-
-
-export async function getStaticProps(context) {
-    const { params } = context
-    const response = await fetch(
-        `http://localhost:4000/products/${params.productId}`
-    )
-    const data = await response.json()
-    console.log(`Generating page for /products/${params.productId}`)
-
-    return {
-        props: {
-            product: data
-        },
-        revalidate: 10
-    }
-}
-
-export async function getStaticPaths() {
-    return {
-        paths: [{ params: { productId: '1' } }],
-        fallback: true
-    }
-}
 function ProductList({ products }) {
     return (
         <>

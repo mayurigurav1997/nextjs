@@ -50,6 +50,10 @@ export async function getStaticPaths() {
     //     params: { postId: `${post.id}` }
     //   }
     // })
+    // return{
+    //     paths,
+    //     fallback:false
+    // }
 
     return {
         paths: [
